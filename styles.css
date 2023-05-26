@@ -17,12 +17,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
   transition: all 1s;
+  background-color: transparent;
 }
 
 .header-scrolled {
-  background-color: transparent;
+  background-color: white;
   transition: all 1s;
 }
 
@@ -43,6 +43,7 @@ header {
   visibility: hidden;
   position: absolute;
   top: 70px;
+  left: 80px;
   background-color: white;
   min-width: 280px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -52,7 +53,6 @@ header {
 
 .primary-navigation:hover .dropdown {
   visibility: visible;
-  transition: 0.6s;
 }
 
 .menu-item {
