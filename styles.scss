@@ -32,7 +32,14 @@ header {
   font-weight: 900;
 }
 
-.active {
+.navigation a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.navigation a:active,
+.navigation a:hover {
   background-color: rgb(255, 225, 0);
   border-radius: 16px;
   color: white !important;
@@ -57,7 +64,19 @@ input[type="search"]::placeholder {
 }
 
 .account-basket {
+  cursor: pointer;
   font-weight: 900;
+  padding: 8px 16px;
+}
+
+.account-basket:active,
+.account-basket:hover {
+  background-color: rgb(255, 225, 0);
+  border-radius: 16px;
+  color: white !important;
+  svg {
+    fill: white;
+  }
 }
 
 svg {
@@ -65,7 +84,12 @@ svg {
   margin: 0 4px;
 }
 
+.basket-icon {
+  cursor: pointer;
+}
+
 .basket {
+  cursor: pointer;
   position: absolute;
   top: 26px;
   right: 22px;
